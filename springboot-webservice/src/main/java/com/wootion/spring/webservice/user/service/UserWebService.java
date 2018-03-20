@@ -24,5 +24,5 @@ public interface UserWebService {
      * @return UserEntity
      */
     @WebMethod
-    List<UserEntity> getUser(UserEntity userEntity);
+    List<UserEntity> getUser(String userEntity);
 }
