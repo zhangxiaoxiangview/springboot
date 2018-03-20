@@ -16,7 +16,7 @@ public class UserService {
     @Autowired
     private UserMapper userMapper;
 
-    public List<UserEntity> findlist(UserEntity userEntity){
-       return userMapper.getList(userEntity);
+    public List<UserEntity> findlist(String username){
+       return userMapper.getList(username);
     }
 }

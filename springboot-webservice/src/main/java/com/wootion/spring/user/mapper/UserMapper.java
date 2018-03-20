@@ -13,8 +13,8 @@ import java.util.List;
 public interface UserMapper {
     /**
      * 查询用户信息
-     * @param userEntity 查询条件
+     * @param username 查询条件
      * @return List<UserEntity>
      */
-    List<UserEntity> getList(UserEntity userEntity);
+    List<UserEntity> getList(String username);
 }

@@ -20,9 +20,9 @@ public interface UserWebService {
 
     /**
      * 接口方法{查询用户信息}
-     * @param userEntity 查询条件
+     * @param username 查询条件
      * @return UserEntity
      */
     @WebMethod
-    List<UserEntity> getUser(String userEntity);
+    List<UserEntity> getUser(String username);
 }

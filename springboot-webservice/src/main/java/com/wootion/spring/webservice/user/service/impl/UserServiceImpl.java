@@ -32,16 +32,15 @@ public class UserServiceImpl implements UserWebService {
     UserMapper userMapper;
 
     @Override
-    public List<UserEntity> getUser(String userEntity) {
+    public List<UserEntity> getUser(String username) {
         List<UserEntity> user = null;
-        UserEntity users = new UserEntity();
         try {
-            users.setUsername(userEntity);
-            user = userMapper.getList(users);
+            System.out.println("用户名:"+username);
+            logger.info("用户名:"+username);
+            user = userMapper.getList(username);
         } catch (Exception e) {
             logger.error("查询异常！");
-        }finally {
-            return  user ;
         }
+            return  user ;
     }
 }
