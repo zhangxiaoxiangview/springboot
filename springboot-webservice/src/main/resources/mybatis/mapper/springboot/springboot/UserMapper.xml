@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wootion.spring.user.mapper.UserMapper">
+    <resultMap id="BaseResultMap" type="com.wootion.spring.user.entity.UserEntity">
+    </resultMap>
+    <!--栏位信息 -->
+    <sql id="selectColumn">
+        m.*
+    </sql>
+    <!--列表查询-->
+    <select id="getList" resultMap="BaseResultMap" parameterType="Object">
+        SELECT
+        <include refid="selectColumn"></include>
+        FROM shop_user m
+    </select>
+
+</mapper>
