@@ -4,8 +4,6 @@ import com.wootion.spring.user.entity.UserEntity;
 
 import javax.jws.WebMethod;
 import javax.jws.WebService;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.ws.ResponseWrapper;
 import java.util.List;
 
 /**
